@@ -26,5 +26,5 @@
    
       If the user doesn't exist, it redirects to the authorization URL for authentication, and upon successful authentication, creates a new user with the provided         user ID and credentials, and a new host with empty details. 
    
-      Then, it checks if the requested time slot is available in the host's details. If it is, it updates the host's details with the booked slot, and sends a             success response. If it's not available, it sends an error response.
+      Then, it checks if the requested time slot is available in the host's details. If it is, it updates the host's details with the booked slot, adds the events         to the calender of both the user and the host ,and sends a success response. If it's not available, it sends an error response.
    
